@@ -1,4 +1,11 @@
 :root {
-  --color-white: #fff;
-  --color-white-border: #ccc;
+  --body-bg-color: #221f20;
+
+  --header-bg-color: rgba(255, 255, 255, 0.9);
+  --header-tag-bg-color: #0f0f0f;
+  --header-text-color: #fff;
+
+  --silder-bg-color: #fefff8;
+
+  --silder-width: 250px;
 }

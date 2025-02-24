@@ -1,15 +1,21 @@
 <template>
-  <div>
-    <LayoutHeader></LayoutHeader>
+  <div class="flex w-screen h-screen bg-[--body-bg-color]">
+    <div class="w-[var(--silder-width)] h-full">
+      <LayoutHeader></LayoutHeader>
 
-    <div class="bg-[var(----color-white)]">
-      <router-view></router-view>
+      <LayoutSilder></LayoutSilder>
+    </div>
+
+    <div class="h-full">
+      <LayoutMain> </LayoutMain>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { LayoutHeader } from "@/components";
+import LayoutHeader from "./LayoutHeader/layoutHeader.vue";
+import LayoutSilder from "./LayoutSilder/layoutSilder.vue";
+import LayoutMain from "./LayoutMain/layoutMain.vue";
 </script>
 
 <style lang="scss" scoped></style>
